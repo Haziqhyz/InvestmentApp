@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 import android.content.Intent;
 
+import java.lang.reflect.Method;
+
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -41,6 +43,23 @@ public class AboutActivity extends AppCompatActivity {
             return super.onOptionsItemSelected(item);
         }
     }
+
+    @Override
+    public boolean onMenuOpened(int featureId, Menu menu) {
+        if (menu != null) {
+            if (menu.getClass().getSimpleName().equals("MenuBuilder")) {
+                try {
+                    Method m = menu.getClass().getDeclaredMethod("setOptionalIconsVisible", Boolean.TYPE);
+                    m.setAccessible(true);
+                    m.invoke(menu, true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return super.onMenuOpened(featureId, menu);
+    }
+
 
 
 

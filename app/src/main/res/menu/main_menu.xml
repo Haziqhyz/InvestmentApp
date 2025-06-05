@@ -6,11 +6,11 @@
         android:id="@+id/menu_home"
         android:title="Home"
         android:icon="@drawable/outline_home_24"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/menu_about"
         android:title="About"
         android:icon="@drawable/outline_info_24"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
 </menu>

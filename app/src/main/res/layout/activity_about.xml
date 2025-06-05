@@ -38,9 +38,7 @@
                 android:id="@+id/appIcon"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:contentDescription="App Icon"
-                android:src="@mipmap/ic_launcher_round"
-                tools:srcCompat="@drawable/img" />
+                app:srcCompat="@drawable/img" />
 
             <TextView
                 android:id="@+id/authorName"
@@ -78,9 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:autoLink="web"
-                android:text="@string/GithubLink"
-                android:textColor="@android:color/holo_blue_dark"
-                tools:text="GitHub Link" />
+                android:text="@string/Github"/>
         </LinearLayout>
     </ScrollView>
 
