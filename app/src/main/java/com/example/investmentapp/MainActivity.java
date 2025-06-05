@@ -89,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
         if (itemId == R.id.menu_home) {
-
             return true;
         } else if (itemId == R.id.menu_about) {
             startActivity (new Intent(this, AboutActivity.class));
