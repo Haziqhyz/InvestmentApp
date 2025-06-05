@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_about"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#108A3B"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="About"
+            app:titleTextColor="#F0EEEE" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="24dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/appIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="App Icon"
+                android:src="@mipmap/ic_launcher_round"
+                tools:srcCompat="@drawable/img" />
+
+            <TextView
+                android:id="@+id/authorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Muhammad Haziq Bin Hayazi"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/matricNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matric No: 2023116297"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course: CDCS240 IT"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© 2025 HAZIQ"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/githubLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autoLink="web"
+                android:text="@string/GithubLink"
+                android:textColor="@android:color/holo_blue_dark"
+                tools:text="GitHub Link" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
