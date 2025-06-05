@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.lang.reflect.Method;
 import java.text.DecimalFormat;
-
+//barupush
 public class MainActivity extends AppCompatActivity {
 
     EditText investInput, rateInput, monthsInput;
